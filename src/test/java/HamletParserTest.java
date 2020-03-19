@@ -46,6 +46,9 @@ public class HamletParserTest {
     @Test
     public void readText()
     {
+        hamletText = hamletParser.changeHamletToLeon(hamletText);
+        hamletText = hamletParser.changeHoratioToTariq(hamletText);
+
         System.out.println(hamletText);
     }
 }
